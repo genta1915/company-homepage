@@ -63,8 +63,10 @@ body {
     left: 0;
     z-index: 1000;
 
-    background: transparent !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+    backdrop-filter: blur(4px);
     box-shadow: none !important;
+    padding: 24px 0;
 }
 
 .navbar-brand,
@@ -75,12 +77,28 @@ body {
 
 .nav-link:hover {
     color: #ffc107 !important;
+}
 
-    .navbar-brand {
-        font-size: 28px;
-    }
+.navbar-brand {
+    font-size: 28px;
+    margin-left: 20px;
 }
 
 .nav-item {
     margin-left: 20px;
+}
+
+.navbar-nav {
+    gap: 18px;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.hero .btn {
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
 }
