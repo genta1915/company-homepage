@@ -403,7 +403,7 @@ body {
 
 .contact-heading p {
     margin: 0;
-    color: #666;
+    color: #222;
     line-height: 1.8;
 }
 
@@ -484,8 +484,9 @@ body {
 
 .footer-info p {
     margin-bottom: 12px;
-    color: #ccc;
+    color: #fff;
     font-size: 15px;
+    font-weight: 500;
     line-height: 1.9;
 }
 
@@ -687,4 +688,34 @@ body {
         font-size: 11px;
         white-space: nowrap;
     }
+}
+
+/* 文章を濃くして読みやすくする */
+.about-text,
+.about-card p,
+.section-heading p,
+.service-card p,
+.service-card li,
+.company-table td,
+.contact-text {
+    color: #444;
+    font-weight: 500;
+}
+
+.about-text,
+.section-heading p,
+.contact-text {
+    line-height: 1.9;
+}
+
+.about-card p,
+.service-card p,
+.service-card li {
+    line-height: 1.7;
+}
+
+.about-card h3,
+.service-card h3 {
+    color: #222;
+    font-weight: 600;
 }
