@@ -912,13 +912,13 @@ body {
 
 .works-area {
     margin-bottom: 14px;
-    color: #555;
+    color: #111;
     font-size: 14px;
 }
 
 .works-text {
     margin: 0;
-    color: #555;
+    color: #111;
     font-size: 15px;
     line-height: 1.8;
 }
@@ -951,5 +951,40 @@ body {
 
     .works-card h3 {
         font-size: 20px;
+    }
+}
+
+/* iPad Mini・Surface Duoの画像切れ修正 */
+@media (min-width: 500px) and (max-width: 768px) {
+    .works-card img {
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* タブレット表示：施工実績3枚目を中央に配置 */
+@media (min-width: 769px) and (max-width: 899px) {
+    .works-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .works-card:last-child {
+        grid-column: 1 / -1;
+        width: calc((100% - 20px) / 2);
+        justify-self: center;
+    }
+}
+
+/* 横幅が広いタブレットは3列表示 */
+@media (min-width: 900px) and (max-width: 1100px) {
+    .works-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .works-card:last-child {
+        grid-column: auto;
+        width: auto;
     }
 }
