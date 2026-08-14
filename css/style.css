@@ -11,7 +11,7 @@ body {
     background:
         linear-gradient(rgba(0, 0, 0, 0.55),
             rgba(0, 0, 0, 0.55)),
-        url("../images/hero.jpg");
+        url("../images/hero.webp") no-repeat center right;
 
     background-size: cover;
     background-position: center right;
