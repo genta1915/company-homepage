@@ -80,7 +80,9 @@ body {
 }
 
 .navbar-brand {
-    font-size: 28px;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
     margin-left: 20px;
 }
 
@@ -1259,5 +1261,17 @@ body {
     .company-layout {
         grid-template-columns: 0.9fr 1.1fr;
         gap: 15px;
+    }
+}
+
+/* スマホ〜iPad miniの上部余白調整 */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 20px;
+    }
+
+    .navbar {
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
 }
