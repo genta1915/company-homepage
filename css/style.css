@@ -29,6 +29,14 @@ body {
     margin-bottom: 15px;
 }
 
+/* iPhone 12 Pro付近だけ調整 */
+@media (min-width: 361px) and (max-width: 391px) {
+    .hero-subtitle {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
 .hero h1 {
     font-size: 52px;
     font-weight: bold;
@@ -48,7 +56,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .hero-text {
@@ -1301,5 +1309,58 @@ body {
         width: 100%;
         height: 100%;
         flex: 1;
+    }
+}
+
+.hero-break {
+    display: block;
+}
+
+@media (max-width: 390px) {
+    .hero h1 {
+        font-size: 24px;
+        line-height: 1.35;
+        width: 100%;
+    }
+
+    .hero-line {
+        display: block;
+        white-space: nowrap;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero h1 {
+        font-size: 26px;
+        line-height: 1.35;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* iPhone 12 Pro付近だけ調整 */
+@media (min-width: 361px) and (max-width: 391px) {
+
+    .hero-content {
+        width: 100%;
+        max-width: none;
+        padding-left: 4%;
+        padding-right: 4px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+        line-height: 1.35;
+    }
+
+    .hero-line {
+        display: block;
     }
 }
