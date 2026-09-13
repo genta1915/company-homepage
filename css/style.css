@@ -44,6 +44,10 @@ body {
     margin-bottom: 20px;
 }
 
+.hero-line {
+    display: block;
+}
+
 .hero-text {
     font-size: 18px;
     line-height: 1.8;
